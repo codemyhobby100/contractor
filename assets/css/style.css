@@ -557,6 +557,36 @@ body {
 .service-card .card-text { margin-block: 10px 20px; }
 
 
+/*-----------------------------------*\
+  #SELLING
+\*-----------------------------------*/
+
+.selling-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.selling-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .selling-content {
+    grid-template-columns: 1fr;
+  }
+
+  .selling-image {
+    order: 1;
+  }
+
+  .selling-text {
+    order: 2;
+  }
+}
 
 
 /*-----------------------------------*\
